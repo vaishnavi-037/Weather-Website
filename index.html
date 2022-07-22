@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width-device-width, initial-scale= 1.0">
+    <meta http-equiv="X-UA-Compatible" content = "ie-edge">
+    <title>Weather App</title>
+    <link rel = "stylesheet" href = "main.css"/>
+
+</head>
+<body>
+    <section class = "header">
+
+        <video autoplay loop id = "video-background-rain" muted plays-inline>
+            <source src="images/rai.mp4" type="video/mp4">
+        </video>
+        <video autoplay loop id = "video-background-clear" muted plays-inline>
+            <source src="images/sky.mp4" type="video/mp4">
+        </video>
+        <video autoplay loop id = "video-background-thunder" muted plays-inline>
+            <source src="images/thunderstorm.mp4" type="video/mp4">
+        </video>
+        <video autoplay loop id = "video-background-haze" muted plays-inline>
+            <source src="images/haze.mp4" type="video/mp4">
+        </video>
+        <video autoplay loop id = "video-background-cloud" muted plays-inline>
+            <source src="images/cloudy.mp4" type="video/mp4">
+        </video>
+        <video autoplay loop id = "video-background-smoke" muted plays-inline>
+            <source src="images/mist11 (1).mp4" type="video/mp4">
+        </video>
+        <video autoplay loop id = "video-background-default" muted plays-inline>
+            <source src="images/mist11 (2).mp4" type="video/mp4">
+        </video>
+
+        <div class="app-main">
+            <div class="searchInputBox">
+               <input type = "text" id = "input-box" class = "input-box"
+                placeholder="Enter City name..." autocomplete="off"/>
+            </div>
+            <div class="weather-body">
+                <div class = "location-details">
+                    <div class="city" id = "city">Amrawati, INDIA</div>
+                    <div class="date" id="date">16 October (Monday), 2020</div>
+                </div>
+                <div class="weather-status">
+                    <div class="temp" id="temp">34&deg;C</div>
+                    <div class="min-max" id="min-max">32&deg;C (MIN) / 34&deg;C (MAX)</div>
+                    <div class="weather" id="weather">CLEAR</div>
+                    <div class="img"></div>
+                </div>
+            </div>
+        </div>
+     </section>
+   
+   <script src="main.js"></script>
+
+</body>
+
+</html>
